@@ -7,6 +7,7 @@
     --clr-gray-blue: 223 47% 23%;
 
     --clr-off-white: 228 100% 99%;
+    --clr-hover-state: 245 83% 68%;
 }
 
 /* Box sizing rules */
@@ -129,6 +130,7 @@ img {
 }
 
 .plan-link {
+    cursor: pointer;
     color: hsl(var(--clr-bright-blue));
     font-weight: 700;
     font-size: 0.8125rem;
@@ -213,6 +215,18 @@ img {
         margin-block: 2em;
         padding: 2em;
         align-items: center;
+    }
+
+    .plan-link:hover {
+        text-decoration: none;
+    }
+
+    button:hover {
+        cursor: pointer;
+    }
+    
+    .payment-btn:hover {
+        background-color: hsl(var(--clr-hover-state));
     }
 
     .buttons {
